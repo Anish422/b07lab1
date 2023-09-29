@@ -290,7 +290,7 @@ public class Polynomial {
             }
         }
         
-        try (Writer writer = new BufferedWriter(new FileWriter(fileName))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
         writer.write(line);
         writer.close();
         }
